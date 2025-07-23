@@ -6,8 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./softonic.css">
+    <style>
+      .theme-switcher {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+    </style>
 </head>
-<body>
+<body class="theme-tech">
+    <button class="theme-switcher" id="themeSwitcher">Switch Theme</button>
         <header>
             <h1> softonic </h1>
          <ul class="utc">
@@ -77,9 +86,7 @@
 </div>
 
      <div class="grid-1">
-        <div class="item2">
-            <img src="./images/3.png" class="img-1" alt="">
-        </div>
+        
      <div>
         <h3>Voice Assistant</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -101,6 +108,9 @@
         Nihil voluptate quod cupiditate.Nam officia consequuntur incidunt voluptatibus magn
         </p>
     </div>
+    <div class="item2">
+        <img src="./images/3.png" class="img-1" alt="">
+    </div>
 </div>
     <!-- </footer-section> -->
       <footer>
@@ -113,9 +123,6 @@
             <h3>Get Support</h3>
             <p>For technical support questions, mail us</p> 
             <a href=" ">demo@gmail.com</a> <br>
-                
-            
-
       </footer>
       <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
       <input type="text" placeholder="Your name" class="fbtn"> <br>
@@ -124,5 +131,7 @@
             <textarea name="text" placeholder="HOW CAN WE HELP YOU " id="textcontent" class="fbtn"></textarea> <br> <br>
             <button>submit</button>
             </div>
+
 </body>
+<script src="./softonic.js"></script>
 </html>
